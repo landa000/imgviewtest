@@ -2,8 +2,8 @@
 
 :root { --color-yellow :#cea462; --color-indigo :#2a2f43; --color-black : #202020; --base-width: 1600px; --base-width-02: 1440px; --base-width-m: calc(100vw - 60px); --m-font-01:36px; --m-font-02: 24px; --m-font-03: 16px; } 
 
-#test { width: 100%; max-width: 1920px; margin: auto; overflow: hidden; display: flex; flex-direction: column; align-items: center; } 
-#test > img.sample { width:100%; min-width: 1920px; } 
+#test { width: 100%; max-width: 860px; margin: auto; overflow: hidden; display: flex; flex-direction: column; align-items: center; } 
+#test > img.sample { width:100%; min-width: 480px; } 
 
 body { font-family: "Noto Sans KR", sans-serif; word-break: auto-phrase; } 
 section { overflow: hidden; } 
