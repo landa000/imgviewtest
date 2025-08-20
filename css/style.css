@@ -10,7 +10,7 @@
 .button > a { display:block; width:100%; height:100%; border-radius:100%; background-color:#f0f0f0; color:var(--color-black); font-size:28px; text-align:center; line-height: 50px; }
 .button > a > i {  }
 
-.button.page-toggle { right:13vw; font-size:8px; background-color:#d0d0d0;}
+.button.page-toggle { right:var(13vw + 50px); font-size:8px; background-color:#d0d0d0;}
 
 body { font-family: "Noto Sans KR", sans-serif; word-break: auto-phrase; } 
 section { overflow: hidden; } 
@@ -21,6 +21,7 @@ section { overflow: hidden; }
 .section-wrapper .title > p.p-title { font-weight:700; } 
 
 span.hidden-text { display: block; width:0; height:0; overflow: hidden; } 
+
 
 
 
