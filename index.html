@@ -41,12 +41,13 @@
 </div>
 
   <script src="./js/jquery-3.5.1.min.js"></script>
-  <script type="test/javascript">
-    const toggleBtn = document.querySelectorAll(".page-toggle");
-    toggleBtn.forEach(($toggle) => {
-      $toggle.onclick = () => {
-        $toggle.classList.toggle('active');
-      }
+  <script>
+    $(function(){
+      let toggleBtn = $(".page-toggle");
+      let img01 = $(".img-01");
+      toggleBtn.click(function(){
+        img01.toggle();
+      });
     });
   </script>
   </body>
