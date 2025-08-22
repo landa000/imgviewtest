@@ -2,56 +2,63 @@
 <html lang="ko-kr">
 
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>데이샤이닝 상세페이지 테스트</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이샤이닝 상세페이지 테스트</title>
 
-<!-- basic css -->
-<link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-<!-- css -->
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
-<!-- script -->
+  <!-- basic css -->
+  <link rel="preconnect"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- script -->
 </head>
 
 <body>
 
-<div id="container">
-  <header id="header">
-  </header>
-  <div class="button page-toggle">
-    <button type="button">
-      <p>페이지 전환</p>
-    </button>
+  <div id="container">
+    <header id="header">
+    </header>
+    <div class="button page-toggle">
+      <button type="button">
+        <p>페이지 전환</p>
+      </button>
+    </div>
+    <div class="button page-top">
+      <a href="#header">
+        <i class="fas fa-arrow-up"></i>
+        <span class="hidden-text">상단으로 가기</span>
+      </a>
+    </div>
+    <div id="test">
+      <div class="img-container con-01">
+        <img src="./img/test01-1.jpg" alt="데이샤이닝 시안" />
+        <img src="./img/somtab.gif" alt="gif" />
+        <img src="./img/test01-2.jpg" alt="데이샤이닝 시안" />
+      </div>
+      <div class="img-container con-02">
+        <img src="./img/test03.jpg" alt="핸메코 시안" />
+      </div>
+    </div>
+    <footer id="footer">
+    </footer>
   </div>
-  <div class="button page-top">
-    <a href="#header">
-      <i class="fas fa-arrow-up"></i>
-      <span class="hidden-text">상단으로 가기</span>
-    </a>
-  </div>
-  <div id="test">
-    <img class="img-01" src="./img/test01.jpg" alt="테스트용 이미지"/>
-    <img class="img-02" src="./img/test03.jpg" alt="테스트용 이미지"/>
-  </div>
-  <footer id="footer">
-  </footer>
-</div>
 
   <script src="./js/jquery-3.5.1.min.js"></script>
   <script>
-    $(function(){
+    $(function () {
       let toggleBtn = $(".page-toggle");
-      let img01 = $(".img-01");
-      let img02 = $(".img-02");
-      toggleBtn.click(function(){
-        img01.toggle();
-        img02.toggle();
+      let con01 = $(".con-01");
+      let con02 = $(".con-02");
+      toggleBtn.click(function () {
+        con01.toggle();
+        con02.toggle();
       });
     });
   </script>
-  </body>
-  
+</body>
+
 </html>

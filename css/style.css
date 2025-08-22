@@ -3,9 +3,10 @@
 :root { --color-yellow :#cea462; --color-indigo :#2a2f43; --color-black : #202020; --base-width: 1600px; --base-width-02: 1440px; --base-width-m: calc(100vw - 60px); --m-font-01:36px; --m-font-02: 24px; --m-font-03: 16px; } 
 
 #test { width: 100%; max-width: 860px; margin: auto; overflow: hidden; display: flex; flex-direction: column; align-items: center; } 
-#test > img { width:100%; min-width: 240px; position:relative; top:0; }
-#test > img.img-01 { } 
-#test > img.img-02 { position:absolute; top:0; z-index:-1; display:none; } 
+#test > .img-container { width:100%; height:auto; min-width: 240px; position:relative; top:0; display: flex; flex-direction: column;}
+#test > .img-container > img { width:100%; }
+#test > .img-container.con-01 { } 
+#test > .img-container.con-02 { position:absolute; top:0; z-index:-1; display:none; } 
 
 .button { position:fixed; bottom:4vw; right:4vw; width:50px; height:50px; z-index:100; }
 .button > a { display:block; width:100%; height:100%; border-radius:100%; background-color:#f0f0f0; color:var(--color-black); font-size:28px; text-align:center; line-height: 50px; }
